@@ -208,7 +208,7 @@ BME280::BME280(uint8_t tosr, uint8_t hosr, uint8_t posr, uint8_t mode, uint8_t s
 }
 
 bool BME280::begin(){
-  Wire.begin();
+  //Wire.begin();
   WriteRegister(CTRL_HUM_ADDR, controlHumidity);
   WriteRegister(CTRL_MEAS_ADDR, controlMeasure);
   WriteRegister(CONFIG_ADDR, config);
